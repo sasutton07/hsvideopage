@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Harry Styles Video Gallery</title>
+</head>
+
+<body>
+    <header class="clearfix">
+        <img id="logoimg" src="images/hslogo.png">
+        <h2>Harry Styles Videos</h2>
+    </header>
+    <nav id="nav_list">
+        <ul>
+            <li><a href="#vid1">Harry's House Preview</a></li>
+            <li><a href="#vid2">Treat People With Kindness</a></li>
+            <li><a href="#vid3">Grammy's Performence</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article id="vid1">
+                <h4>Harry's House out May 20th</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/zVANaD9WSTA" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid2">
+                <h4>Treat People With Kindness Music Video</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/zVANaD9WSTA" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid3">
+                <h4>Grammy's Performance</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/zVANaD9WSTA" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+        <div><button onclick="topFunction()" id="cornerbtn" title="Go to top">Return To Top</button></div>
+
+        <script>
+            // When the user scrolls down 800px from the top of the document, show the button
+             window.onscroll = function() {scrollFunction()};
+         
+             function scrollFunction() {
+               if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                 document.getElementById("cornerbtn").style.display = "block";
+               } else {
+                 document.getElementById("cornerbtn").style.display = "none";
+               }
+             }
+         
+             // When the user clicks on the button, scroll to the top of the document
+             function topFunction() {
+               document.body.scrollTop = 0;
+               document.documentElement.scrollTop = 0;
+             }
+         </script>
+
+    </main>
+    <footer>
+        <p>&copy; 2022</p>
+    </footer>
+</body>
+
+</html>
